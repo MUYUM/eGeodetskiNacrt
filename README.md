@@ -21,7 +21,7 @@ Osnovno standardiziranega eGeodetskiNačrta predstavlja [JSON](https://en.wikipe
 
 Trenutne verzije eGeodetskegaNačrta:
 
-- Verzija 1.0.0
+- [Verzija 1.0.0](MUYUM/eGeodetskiNacrt/blob/main/Verzija_1.0.0/Opis.md)
 
 ## Načini nadgradnje:
 
