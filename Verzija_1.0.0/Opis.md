@@ -21,7 +21,8 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		- SlojID [[enum number](#Seznam-slojev)] (ID sloja)
 - SeznamTock (Informacije o točkah po specifikaciji formata [GeoJSON](https://geojson.org/)):
 	- Točka:
-		- ID [number] (referenca na ID podatkovnega vira)
+		- r1D [number] (referenca na ID podatkovnega vira za višino)
+		- r2D [number] (referenca na ID podatkovnega vira za 2D položaj)
 		- (Opcijsko) s1D [m] (sigma 1D)
 		- (Opcijsko) s2D [m] (sigma 2D)
 - ProstorskiPodatki:
@@ -64,7 +65,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		4 - Javna razsvetljava
 		5 - Elektronske komunikacije
 	9 - Ostalo:
-		1 - Ostalo
+		1..n - Ostalo (poljubni, uporabniško definirani sloji)
 		
 
 ### Seznam podatkov:
@@ -75,6 +76,8 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 	4 - Ortofoto (*.tif + *.tfw / *.geoTiff)
 	5 - DMR (*.tif + *.tfw / *.geoTiff)
 	6 - Mesh (*.obj)
+	7 - DOF GURS (2023)
+	8 - Lidar GURS (2015)
 
 ## Primer s specifikacijo:
 
@@ -165,7 +168,8 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 						]
 					},	
 					"properties": {
-						"ID": 2
+						"r1D": 2,
+						"r2D": 2
 					}
 				},
 				{
@@ -179,7 +183,8 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 						]
 					},	
 					"properties": {
-						"ID": 1
+						"r1D": 1,
+						"r2D": 2,
 						"s1D": 0.01,
 						"s2D": 0.01
 					}
