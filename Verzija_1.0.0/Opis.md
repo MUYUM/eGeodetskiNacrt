@@ -15,9 +15,13 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 	- OdgovorniGeodet [text] ([IZS](https://www.izs.si/imenik/pooblasceni-inzenirji/) številka odgovornega geodeta)
 	- KoordinatniSistem1D [number] (po standardu [EPSG](https://epsg.io/) - [Primer](https://www.e-prostor.gov.si/podrocja/drzavni-topografski-sistem/drugo/razno/epsg-kode-za-slovenijo/?acitem=1392-1393))
 	- KoordinatniSistem2D [number] (po standardu [EPSG](https://epsg.io/) - [Primer](https://www.e-prostor.gov.si/podrocja/drzavni-topografski-sistem/drugo/razno/epsg-kode-za-slovenijo/?acitem=1392-1393))
-- GeodetskiNacrt (Geodetski načrt po specifikaciji formata [GeoJSON](https://geojson.org/)):
-	- Element (Točka/Linija/Poligon):
-		- TipID [number] (ID tipa elementa glede na [Topografski Ključ](http://fgg-web.fgg.uni-lj.si/~/mkuhar/Pouk/DetIzmera/Topografski_kljuc_maj_2006.pdf) ali eTopografskiKljuč)
+- GeodetskiNacrt:
+	- UporabniskiSloji (Sloji, ki jih definira uporabnik):
+		- SlojID (ID Sloja, ki se glede na specifikacijo začne z 91, 92,..9n)
+		- Opis (Opis sloja)
+	- GeoPodatki (Geodetski načrt po specifikaciji formata [GeoJSON](https://geojson.org/)):
+		- Element (Točka/Linija/Poligon):
+			- TipID [number] (ID tipa elementa glede na [Topografski Ključ](http://fgg-web.fgg.uni-lj.si/~/mkuhar/Pouk/DetIzmera/Topografski_kljuc_maj_2006.pdf) ali eTopografskiKljuč)
 		- SlojID [[enum number](#Seznam-slojev)] (ID sloja)
 - SeznamTock (Informacije o točkah po specifikaciji formata [GeoJSON](https://geojson.org/)):
 	- Točka:
@@ -96,48 +100,56 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		},
 		"GeodetskiNacrt":
 		{
-			"type": "FeatureCollection",
-			"features": [
-				{
-					"type": "Feature",
-					"geometry": {
-						"type": "Polygon",
-						"coordinates": [
-							[
+			"UporabniskiSloji":
+			[
+				{ "SlojID": 91, "Opis": "Frontne Mere" },
+				{ "SlojID": 92, "Opis": "Detajlni posnetek mostu" }
+			],
+			"GeoPodatki":
+			{
+				"type": "FeatureCollection",
+				"features": [
+					{
+						"type": "Feature",
+						"geometry": {
+							"type": "Polygon",
+							"coordinates": [
 								[
-									444930.64,
-									112476.81,
-									321.03
-								],
-								[
-									444938.97,
-									112463.09,
-									321.06
-								],... dodatne točke poligona
+									[
+										444930.64,
+										112476.81,
+										321.03
+									],
+									[
+										444938.97,
+										112463.09,
+										321.06
+									],... dodatne točke poligona
+								]
 							]
-						]
-					},	
-					"properties": {
-						"TipID": 330190, -> Pločnik, raven ali nagnjen, rampa
-						"SlojID": 23     -> Pločnik
-					}
-				},
-				{
-					"type": "Feature",
-					"geometry": {
-						"type": "Point",
-						"coordinates": [
-							439483.08,
-							110043.46,
-							378.37
-						]
-					},	
-					"properties": {
-						"TipID": 330210, -> Semafor
-						"SlojID": 91     -> Pločnik
-					}
-				},... Drugi elementi
-			]
+						},	
+						"properties": {
+							"TipID": 330190, -> Pločnik, raven ali nagnjen, rampa
+							"SlojID": 23     -> Pločnik
+						}
+					},
+					{
+						"type": "Feature",
+						"geometry": {
+							"type": "Point",
+							"coordinates": [
+								439483.08,
+								110043.46,
+								378.37
+							]
+						},	
+						"properties": {
+							"TipID": 330210, -> Semafor
+							"SlojID": 91     -> Pločnik
+						}
+					},... Drugi elementi
+				]
+			}
 		},
 		"SeznamTock":
 		{
