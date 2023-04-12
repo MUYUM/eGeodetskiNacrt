@@ -96,7 +96,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 
 Shema prikazuje enostaven primer na podlagi katerega izdelamo geodetski načrt po standardu "eGeodetskiNačrt".
 
-![](./Shema.svg | width=1500)
+<img src="./Shema.svg" width="1500" height="1500">
 
 Na shemi vidimo, da imamo:
 - Cesto (označena z rumeno barvo)
