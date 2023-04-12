@@ -21,7 +21,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		- Opis (Opis sloja)
 	- GeoPodatki (Geodetski načrt po specifikaciji formata [GeoJSON](https://geojson.org/)):
 		- Element (Točka/Linija/Poligon):
-		- TipID [number] (ID tipa elementa glede na [Topografski Ključ](http://fgg-web.fgg.uni-lj.si/~/mkuhar/Pouk/DetIzmera/Topografski_kljuc_maj_2006.pdf) ali eTopografskiKljuč)
+		- TipID [number/null] (ID tipa elementa glede na [Topografski Ključ](http://fgg-web.fgg.uni-lj.si/~/mkuhar/Pouk/DetIzmera/Topografski_kljuc_maj_2006.pdf) ali eTopografskiKljuč)
 		- SlojID [[enum number](#Seznam-slojev)] (ID sloja)
 - SeznamTock (Informacije o točkah po specifikaciji formata [GeoJSON](https://geojson.org/)):
 	- Točka:
@@ -31,6 +31,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		- (Opcijsko) s2D [m] (sigma 2D)
 - ProstorskiPodatki:
 	- ID [Number] (ID podatkovnega vira)
+	- Datum [datetime `'YYYYMMDD'` [ISO8601](https://en.wikipedia.org/wiki/ISO_8601)] (Datum podatkovnega vira)
 	- Tip [[enum number](#Seznam-podatkov)]:
 	- Podatki [text/null] (referenca na datoteko/URL)
 	- s1D [m] (sigma 1D)
@@ -68,20 +69,26 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		3 - Elektrika
 		4 - Javna razsvetljava
 		5 - Elektronske komunikacije
-	9 - Ostalo:
+	90 - Ostalo:
 		1..n - Ostalo (poljubni, uporabniško definirani sloji)
 		
 
 ### Seznam podatkov:
 
-	1 - GNSS (*.koo / *.txt)
-	2 - Tahimetrija (*.koo / *.txt)
-	3 - Oblak Točk (*.las / *.laz / *.e57)
-	4 - Ortofoto (*.tif + *.tfw / *.geoTiff)
-	5 - DMR (*.tif + *.tfw / *.geoTiff)
-	6 - Mesh (*.obj)
-	7 - DOF GURS (2023)
-	8 - Lidar GURS (2015)
+	1 - Statični podatki:
+		1 - DOF GURS (2023)
+		2 - Lidar GURS (2015)
+		
+	9 - Uporabniški podatki:
+		1..n (ID Podatkovnega sloja:
+	
+	Tipi uporabniških podatkov:
+		1 - GNSS (*.koo / *.txt)
+		2 - Tahimetrija (*.koo / *.txt)
+		3 - Oblak Točk (*.las / *.laz / *.e57)
+		4 - Ortofoto (*.tif + *.tfw / *.geoTiff)
+		5 - DMR (*.tif + *.tfw / *.geoTiff)
+		6 - Mesh (*.obj)
 
 ## Primer s specifikacijo:
 
@@ -206,15 +213,17 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		"ProstorskiPodatki"
 		[
 			{
-				"ID": 1,
+				"ID": 91,
 				"Tip": 3,
+				"Datum": "20210809",
 				"Podatki": "http://spletnastran.si/oblaktock.las",
 				"s1D": 0.02,
 				"s2D": 0.02
 			},
 			{
-				"ID": 2,
+				"ID": 92,
 				"Tip": 1,
+				"Datum": "20210105",
 				"Podatki": "gnsstocke.koo",
 				"s1D": 0.02,
 				"s2D": 0.02
