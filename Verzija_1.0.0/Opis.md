@@ -25,8 +25,8 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		- SlojID [[enum number](#Seznam-slojev)] (ID sloja)
 - SeznamTock (Informacije o točkah po specifikaciji formata [GeoJSON](https://geojson.org/)):
 	- Točka:
-		- r1D [number] (referenca na ID podatkovnega vira za višino)
-		- r2D [number] (referenca na ID podatkovnega vira za 2D položaj)
+		- r1D [[enum number](#Seznam-podatkov)] (referenca na ID podatkovnega vira za višino)
+		- r2D [[enum number](#Seznam-podatkov)] (referenca na ID podatkovnega vira za 2D položaj)
 		- (Opcijsko) s1D [m] (sigma 1D)
 		- (Opcijsko) s2D [m] (sigma 2D)
 - ProstorskiPodatki:
