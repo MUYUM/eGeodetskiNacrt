@@ -108,7 +108,7 @@ Shema prikazuje enostaven primer na podlagi katerega izdelamo geodetski načrt p
 - Vozlišča (vertex-e), ki predstavljajo izmerjene točke (označene z rdečo barvo)
 
 **Shemo smo dopolnili z besedili, ki nam pomagajo pri razumevanju standarda. Na podlagi sheme smo v datoteko zapisali:**
-- V razdelek "GeodetskiNacrt -> UporabniskiSloji" smo dodali še uporabniški sloj, ki ga je zahteval naročnik:
+- V razdelek `"GeodetskiNacrt -> UporabniskiSloji"` smo dodali še uporabniški sloj, ki ga je zahteval naročnik:
 	- `{ "ID": 901, "Barva": "#ff7f00", "Opis": "Ležeči policaj" }`
 
 - V razdelek "ProstorskiPodatki" smo dodali štiri lastne podatkovne vire:
@@ -117,13 +117,13 @@ Shema prikazuje enostaven primer na podlagi katerega izdelamo geodetski načrt p
 	- `{ "ID": 93, "Opis": "Lasten GPS" , "Tip": 1, "Datum": "20210809", Podatki": "GPS.koo"                        , "s1D": 0.04, "s2D": 0.02 }`
 	- `{ "ID": 94, "Opis": "VOKA-SNAGA" , "Tip": 1, "Datum": "20210810", Podatki": "VOKA.koo"                       , "s1D": null, "s2D": null }`
 	
-- V razdelek "SeznamTock" smo dodali vsa vozlišča z naslednjimi atributi:
+- V razdelek `"SeznamTock"` smo dodali vsa vozlišča z naslednjimi atributi:
 	- r1D (referenco podatkovnega vira za 1D komponento)
 	- r2D (referenco podatkovnega vira za 2D komponento)
 	- (opcijsko) s1D (natančnost 1D komponente)
 	- (opcijsko) s2D (natančnost 2D komponente)
 
-- V razdelek "GeodetskiNacrt -> GeoPodatki" smo dodali vse geometrijske elemente (Točke/Linije/Poligoni) z naslednjimi atributi:
+- V razdelek `"GeodetskiNacrt -> GeoPodatki"` smo dodali vse geometrijske elemente (Točke/Linije/Poligoni) z naslednjimi atributi:
 	- SlojID (referenca na sloj)
 	- TipID (referenca na TopografskiKljuč)
 
