@@ -32,11 +32,12 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		- (Opcijsko) s2D [m] (sigma 2D)
 - ProstorskiPodatki:
 	- ID [Number] (ID podatkovnega vira)
+	- Opis [text] (Opis podatkovnega vira)
 	- Datum [datetime `'YYYYMMDD'` [ISO8601](https://en.wikipedia.org/wiki/ISO_8601)] (Datum podatkovnega vira)
 	- Tip [[enum number](#Seznam-podatkov)]:
 	- Podatki [text/null] (referenca na datoteko/URL)
-	- s1D [m] (sigma 1D)
-	- s2D [m] (sigma 2D)
+	- s1D [m/null] (natančnost 1D oz. null, kadar ni podatka o natančnosti)
+	- s2D [m/null] (natančnost 2D oz. null, kadar ni podatka o natančnosti)
 
 
 ### Seznam slojev:
@@ -65,6 +66,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 	6 - Upravni Režimi:
 		1 - Parcelne meje
 	7 - Gospodarska javna infrastruktura:
+		0 - Neznano
 		1 - Vodovod
 		2 - Kanalizacija
 		3 - Elektrika
@@ -81,15 +83,53 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		2 - Lidar GURS (2015)
 		
 	9 - Uporabniški podatki:
-		1..n (ID Podatkovnega sloja:
+		1..n (ID Podatkovnega sloja):
 	
 	Tipi uporabniških podatkov:
-		1 - GNSS (*.koo / *.txt)
-		2 - Tahimetrija (*.koo / *.txt)
-		3 - Oblak Točk (*.las / *.laz / *.e57)
-		4 - Ortofoto (*.tif + *.tfw / *.geoTiff)
-		5 - DMR (*.tif + *.tfw / *.geoTiff)
-		6 - Mesh (*.obj)
+		1 - Točke (*.koo / *.txt)
+		2 - Oblak Točk (*.las / *.laz / *.e57)
+		3 - Ortofoto (*.tif + *.tfw / *.geoTiff)
+		4 - DMR (*.tif + *.tfw / *.geoTiff)
+		5 - Mesh (*.obj)
+
+## Shematski primer:
+
+Shema prikazuje enostaven primer na podlagi katerega izdelamo geodetski načrt po standardu "eGeodetskiNačrt".
+
+![Alt text](./Shema.svg)
+
+Na shemi vidimo, da imamo:
+- Cesto (označena z rumeno barvo)
+- Ležeči policaj (označeno z rjavo barvo)
+- Vodovod (označeno z modro barvo), ki smo ga prejeli od upravljalca
+- Dva vodovodna jaška in en neznan jašek
+- Dva objekta
+- Živo mejo med objektoma (označeno z zeleno)
+- Vozlišča (vertex-e), ki predstavljajo izmerjene točke (označene z rdečo barvo)
+
+Shemo smo dopolnili z besedili, ki nam pomagajo pri razumevanju standarda. Na podlagi sheme smo v datoteko zapisali:
+- V razdelek "GeodetskiNacrt -> UporabniskiSloji" smo dodali še uporabniški sloj, ki ga je zahteval naročnik:
+	- { "ID": 901, "Barva": "#ff7f00", "Opis": "Ležeči policaj" }
+
+- V razdelek "ProstorskiPodatki" smo dodali štiri lastne podatkovne vire:
+	- { "ID": 91, "Opis": "Lasten DOF" , "Tip": 3, "Datum": "20210809", Podatki": "http://spletnastran.si/DOF.tif" , "s1D": null, "s2D": 0.02 }
+	- { "ID": 92, "Opis": "Lasten SCAN", "Tip": 2, "Datum": "20210809", Podatki": "http://spletnastran.si/SCAN.las", "s1D": 0.02, "s2D": 0.02 }
+	- { "ID": 93, "Opis": "Lasten GPS" , "Tip": 1, "Datum": "20210809", Podatki": "GPS.koo"                        , "s1D": 0.04, "s2D": 0.02 }
+	- { "ID": 94, "Opis": "VOKA-SNAGA" , "Tip": 1, "Datum": "20210810", Podatki": "VOKA.koo"                       , "s1D": null, "s2D": null }
+	
+- V razdelek "SeznamTock" smo dodali vsa vozlišča z naslednjimi atributi:
+	- r1D (referenco podatkovnega vira za 1D komponento)
+	- r2D (referenco podatkovnega vira za 2D komponento)
+	- (opcijsko) s1D (natančnost 1D komponente)
+	- (opcijsko) s2D (natančnost 2D komponente)
+
+- V razdelek "GeodetskiNacrt -> GeoPodatki" smo dodali vse geometrijske elemente (Točke/Linije/Poligoni) z naslednjimi atributi:
+	- SlojID (referenca na sloj)
+	- TipID (referenca na TopografskiKljuč)
+
+- V razdelek "Certifikat" smo vpisali podatke o geodetskem načrtu
+
+Dateko smo shranili kot "PrimerGeodetskegaNacrta.json" in jo zapakirali v "ZIP" datoteko v katero smo vljučili še datoteko "GPS.koo", ki smo jo v razdelku "ProstorskiPodatki" navedli kot uporabljen podatkovni vir. S tem je geodetski načrt izdelan po standardu eGeodetskiNačrt.
 
 ## Primer s specifikacijo:
 
@@ -215,6 +255,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		[
 			{
 				"ID": 91,
+				"Opis": "Skeniranje z RTC360",
 				"Tip": 3,
 				"Datum": "20210809",
 				"Podatki": "http://spletnastran.si/oblaktock.las",
@@ -223,6 +264,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 			},
 			{
 				"ID": 92,
+				"Opis": "Točke posnete z Leica GPS1200",
 				"Tip": 1,
 				"Datum": "20210105",
 				"Podatki": "gnsstocke.koo",
