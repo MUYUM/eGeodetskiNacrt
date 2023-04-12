@@ -98,7 +98,7 @@ Shema prikazuje enostaven primer na podlagi katerega izdelamo geodetski načrt p
 
 <img src="./Shema.svg" width="800" height="800">
 
-Na shemi vidimo, da imamo:
+**Na shemi vidimo, da imamo**:
 - Cesto (označena z rumeno barvo)
 - Ležeči policaj (označeno z rjavo barvo)
 - Vodovod (označeno z modro barvo), ki smo ga prejeli od upravljalca
@@ -107,15 +107,15 @@ Na shemi vidimo, da imamo:
 - Živo mejo med objektoma (označeno z zeleno)
 - Vozlišča (vertex-e), ki predstavljajo izmerjene točke (označene z rdečo barvo)
 
-Shemo smo dopolnili z besedili, ki nam pomagajo pri razumevanju standarda. Na podlagi sheme smo v datoteko zapisali:
+**Shemo smo dopolnili z besedili, ki nam pomagajo pri razumevanju standarda. Na podlagi sheme smo v datoteko zapisali:**
 - V razdelek "GeodetskiNacrt -> UporabniskiSloji" smo dodali še uporabniški sloj, ki ga je zahteval naročnik:
-	- { "ID": 901, "Barva": "#ff7f00", "Opis": "Ležeči policaj" }
+	- `{ "ID": 901, "Barva": "#ff7f00", "Opis": "Ležeči policaj" }`
 
 - V razdelek "ProstorskiPodatki" smo dodali štiri lastne podatkovne vire:
-	- { "ID": 91, "Opis": "Lasten DOF" , "Tip": 3, "Datum": "20210809", Podatki": "http://spletnastran.si/DOF.tif" , "s1D": null, "s2D": 0.02 }
-	- { "ID": 92, "Opis": "Lasten SCAN", "Tip": 2, "Datum": "20210809", Podatki": "http://spletnastran.si/SCAN.las", "s1D": 0.02, "s2D": 0.02 }
-	- { "ID": 93, "Opis": "Lasten GPS" , "Tip": 1, "Datum": "20210809", Podatki": "GPS.koo"                        , "s1D": 0.04, "s2D": 0.02 }
-	- { "ID": 94, "Opis": "VOKA-SNAGA" , "Tip": 1, "Datum": "20210810", Podatki": "VOKA.koo"                       , "s1D": null, "s2D": null }
+	- `{ "ID": 91, "Opis": "Lasten DOF" , "Tip": 3, "Datum": "20210809", Podatki": "http://spletnastran.si/DOF.tif" , "s1D": null, "s2D": 0.02 }`
+	- `{ "ID": 92, "Opis": "Lasten SCAN", "Tip": 2, "Datum": "20210809", Podatki": "http://spletnastran.si/SCAN.las", "s1D": 0.02, "s2D": 0.02 }`
+	- `{ "ID": 93, "Opis": "Lasten GPS" , "Tip": 1, "Datum": "20210809", Podatki": "GPS.koo"                        , "s1D": 0.04, "s2D": 0.02 }`
+	- `{ "ID": 94, "Opis": "VOKA-SNAGA" , "Tip": 1, "Datum": "20210810", Podatki": "VOKA.koo"                       , "s1D": null, "s2D": null }`
 	
 - V razdelek "SeznamTock" smo dodali vsa vozlišča z naslednjimi atributi:
 	- r1D (referenco podatkovnega vira za 1D komponento)
