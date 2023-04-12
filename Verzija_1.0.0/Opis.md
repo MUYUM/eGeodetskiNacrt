@@ -17,7 +17,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 	- KoordinatniSistem2D [number] (po standardu [EPSG](https://epsg.io/) - [Primer](https://www.e-prostor.gov.si/podrocja/drzavni-topografski-sistem/drugo/razno/epsg-kode-za-slovenijo/?acitem=1392-1393))
 - GeodetskiNacrt:
 	- UporabniskiSloji (Sloji, ki jih definira uporabnik):
-		- SlojID (ID Sloja, ki se glede na specifikacijo začne z 91, 92,..9n)
+		- SlojID (ID Sloja, ki se glede na specifikacijo začne z 901, 902,..90n)
 		- Opis (Opis sloja)
 	- GeoPodatki (Geodetski načrt po specifikaciji formata [GeoJSON](https://geojson.org/)):
 		- Element (Točka/Linija/Poligon):
