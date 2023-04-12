@@ -1,0 +1,100 @@
+<svg width="460" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="261" x2="206" y1="477" x1="95" stroke="#ffff00" fill="none"/>
+  <path id="svg_3" d="m206.42695,260.48593l175.44641,-85.54761" opacity="undefined" stroke-linecap="undefined" stroke-linejoin="undefined" stroke="#ffff00" fill="none"/>
+  <line stroke="#007f00" id="svg_15" y2="260.95238" x2="206.19048" y1="154.39801" x1="128.76482" fill="none"/>
+  <line id="svg_9" y2="292.85714" x2="243.33333" y1="496.19048" x1="140.95238" stroke="#ffff00" fill="none"/>
+  <path id="svg_11" d="m404.7619,211.90476l-161.42857,80.95238" opacity="undefined" stroke="#ffff00" fill="none"/>
+  <rect transform="rotate(-26 244.221 175.606)" id="svg_12" height="57.61905" width="87.14286" y="146.79617" x="200.64953" stroke="#000000" fill="none"/>
+  <rect transform="rotate(-152 109.621 320.861)" id="svg_16" height="101.42857" width="58.09524" y="270.14652" x="80.57387" stroke="#000000" fill="none"/>
+  <line id="svg_17" y2="356.19048" x2="76.66667" y1="339.04762" x1="74.28571" stroke="#000000" fill="none"/>
+  <path id="svg_19" d="m67.71673,348.81562l16.19048,-2.38095" opacity="undefined" stroke="#000000" fill="none"/>
+  <line transform="rotate(-59 208.305 172.448)" stroke="#000000" id="svg_20" y2="181.91647" x2="209.49571" y1="162.98038" x1="207.11476" fill="none"/>
+  <line transform="rotate(-62 208.481 172.703)" stroke="#000000" id="svg_21" y2="171.62289" x2="217.51905" y1="173.78398" x1="199.44263" fill="none"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_23" cy="172.73624" cx="208.5633" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_24" cy="348.0497" cx="75.50916" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_25" cy="154.90539" cx="128.51739" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_26" cy="260.18376" cx="206.05284" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_27" cy="175.24669" cx="381.3663" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_28" cy="211.64829" cx="405.21562" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_29" cy="293.23809" cx="243.29126" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_30" cy="219.59807" cx="218.18671" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_31" cy="168.97055" cx="193.50056" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_32" cy="181.94124" cx="296.42923" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_33" cy="130.05849" cx="270.90627" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_34" cy="262.69422" cx="107.30826" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_35" cy="289.47241" cx="158.7726" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_36" cy="378.59357" cx="111.07395" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_37" cy="350.97856" cx="60.86484" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_38" cy="475.66451" cx="94.75599" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_39" cy="496.58498" cx="140.36259" fill="#ff0000"/>
+  <ellipse ry="4.3933" rx="4.18409" id="svg_41" cy="252.50938" cx="194.55949" stroke="#007f00" fill="none"/>
+  <ellipse ry="4.3933" rx="4.18409" id="svg_42" cy="233.26255" cx="180.33358" stroke="#007f00" fill="none"/>
+  <ellipse ry="4.3933" rx="4.18409" id="svg_43" cy="216.52619" cx="168.19971" stroke="#007f00" fill="none"/>
+  <ellipse ry="4.3933" rx="4.18409" id="svg_44" cy="201.13641" cx="156.92093" stroke="#007f00" fill="none"/>
+  <ellipse ry="4.3933" rx="4.18409" id="svg_45" cy="183.89027" cx="144.76879" stroke="#007f00" fill="none"/>
+  <rect transform="rotate(-57 170.919 267.154)" id="svg_47" height="12.97069" width="12.97069" y="260.66836" x="164.43402" stroke="#000000" fill="none"/>
+  <line id="svg_58" y2="287.33624" x2="207.42358" y1="476.41921" x1="109.17031" stroke="#0000ff" fill="none"/>
+  <g transform="rotate(-93 207.385 287.779)" id="svg_50">
+   <path transform="rotate(-57 207.385 287.895)" id="svg_49" d="m200.89946,281.40996l12.97069,0l0,12.97069l-12.97069,0l0,-12.97069z" opacity="undefined" stroke="#000000" fill="none"/>
+   <line stroke="#000000" id="svg_46" y2="296.98446" x2="209.17431" y1="278.57445" x1="205.502" fill="none"/>
+  </g>
+  <g transform="rotate(-150 359.058 197.073)" id="svg_54">
+   <path transform="rotate(-57 359.057 197.189)" id="svg_52" d="m352.57195,190.70386l12.97069,0l0,12.97068l-12.97069,0l0,-12.97068z" opacity="undefined" stroke="#000000" fill="none"/>
+   <line stroke="#000000" id="svg_53" y2="206.27836" x2="360.84681" y1="187.86835" x1="357.17449" fill="none"/>
+  </g>
+  <path id="svg_60" d="m221.39738,264.19214l138.42794,-67.68559" opacity="undefined" stroke="#0000ff" fill="none"/>
+  <line id="svg_64" y2="196.94323" x2="358.95197" y1="181.65939" x1="394.75983" stroke="#0000ff" fill="none"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_55" cy="196.77844" cx="359.11908" fill="#ff0000"/>
+  <line stroke="#0000ff" id="svg_59" y2="264.62882" x2="221.83406" y1="287.33625" x1="208.29695" fill="none"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_56" cy="287.85629" cx="207.44658" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_57" cy="267.41024" cx="171.01544" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.34774" rx="3.01122" id="svg_61" cy="264.19879" cx="222.33056" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_62" cy="476.6442" cx="109.23012" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_65" cy="181.4477" cx="394.81964" fill="#ff0000"/>
+  <text style="cursor: move;" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_69" y="213.9738" x="412.66375" fill="#000000">r1D: 2, r2D: 1</text>
+  <text stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_70" y="298.25327" x="249.34497" fill="#000000">r1D: 2, r2D: 2</text>
+  <text transform="rotate(-26 305.973 112.734)" style="cursor: move;" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_71" y="115.05684" x="274.2358" fill="#000000">r1D: 2, r2D: 1, s1D: 0.10</text>
+  <text transform="rotate(61 390.502 252.183)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_72" y="254.58516" x="336.68122" fill="#000000">Element: Točka, SlojID: 71, TipID: 322020</text>
+  <text transform="rotate(28 264.301 318.122)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_73" y="320.52402" x="210.48035" fill="#000000">Element: Točka, SlojID: 71, TipID: 322020</text>
+  <text transform="rotate(34 118.013 230.454)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_74" y="232.85594" x="64.19213" fill="#000000">Element: Točka, SlojID: 70, TipID: 321020</text>
+  <text transform="rotate(54 170.335 200.218)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_75" y="202.62009" x="117.03056" fill="#000000">Element: Linija, SlojID: 52, TipID: 351030</text>
+  <text transform="rotate(-63 191.27 409.825)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_76" y="412.22708" x="142.79475" fill="#000000">Element: Linija, SlojID: 21, TipID: null</text>
+  <text transform="rotate(62 367.845 227.857)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_77" y="230.1802" x="347.18165" fill="#000000">r1D: 93, r2D: 93</text>
+  <ellipse ry="4.3933" rx="4.18409" id="svg_78" cy="168.60642" cx="133.41508" stroke="#007f00" fill="none"/>
+  <text transform="rotate(-26 330.864 166.149)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_79" y="168.47144" x="299.12663" fill="#000000">r1D: 2, r2D: 1, s1D: 0.10</text>
+  <text style="cursor: move;" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_80" y="182.96944" x="402.62008" fill="#000000">r1D: 94, r2D: 94</text>
+  <text stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_81" y="168.12227" x="366.37554" fill="#000000">r1D: 2, r2D: 1</text>
+  <text transform="rotate(-33 123.74 146.149)" style="cursor: move;" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_82" y="148.47162" x="90.39302" fill="#000000">r1D: 93, r2D: 1, s1D: 0.01</text>
+  <text transform="rotate(-26 291.267 211.731)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_83" y="214.13246" x="242.79199" fill="#000000">Element: Linija, SlojID: 21, TipID: null</text>
+  <text transform="rotate(-63 162.475 388.428)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_85" y="390.82971" x="109.1703" fill="#000000">Element: Linija, SlojID: 71, TipID: 322060</text>
+  <text transform="rotate(-61 97.7889 401.872)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_86" y="404.14512" x="76.44076" fill="#000000">r1D: 93, r2D: 93</text>
+  <text transform="rotate(31 74.1414 241.101)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_87" y="243.37372" x="39.18058" fill="#000000">r1D: 93, r2D: 93, s1D: 0.01</text>
+  <text stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_88" y="500.87337" x="147.59826" fill="#000000">r1D: 2, r2D: 1</text>
+  <text stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_89" y="466.37555" x="56.76855" fill="#000000">r1D: 2, r2D: 1</text>
+  <text transform="rotate(-26 269.675 177.298)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_91" y="179.69931" x="213.32191" fill="#000000">Element: Poligon, SlojID: 26, TipID: 312030</text>
+  <text transform="rotate(-26 261.802 156.708)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_92" y="159.1097" x="205.44985" fill="#000000">Element: Točka, SlojID: 26, TipID: 312030</text>
+  <rect transform="rotate(27 202.667 320.073)" stroke="#ff7f00" id="svg_93" height="8.71208" width="48.24561" y="315.71733" x="178.54373" fill="none"/>
+  <text transform="rotate(28 278.819 354.183)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_95" y="356.45532" x="225.68519" fill="#000000">Element: Poligon, SlojID: 901, TipID: null</text>
+  <text stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_96" y="490.99665" x="73.43514" fill="#000000">r1D: 94, r2D: 94</text>
+  <text transform="rotate(-61 47.5516 377.836)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_97" y="380.07713" x="26.20736" fill="#000000">r1D: 93, r2D: 93</text>
+  <text transform="rotate(-62 122.864 316.924)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_98" y="319.16512" x="66.62744" fill="#000000">Element: Poligon, SlojID: 26, TipID: 312030</text>
+  <text transform="rotate(-62 106.792 309.459)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_99" y="311.70091" x="53.08715" fill="#000000">Element: Točka, SlojID: 26, TipID: 312030</text>
+  <text transform="rotate(-61 159.059 307.725)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_100" y="309.99802" x="137.71109" fill="#000000">r1D: 93, r2D: 93</text>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_101" cy="313.38434" cx="179.45255" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_102" cy="304.41795" cx="183.33799" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_103" cy="327.13281" cx="226.37666" fill="#ff0000"/>
+  <ellipse stroke="#ff0000" ry="3.1294" rx="3.01122" id="svg_104" cy="334.90368" cx="222.49122" fill="#ff0000"/>
+  <text transform="rotate(-26 246.554 258.148)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_107" y="260.57568" x="225.21525" fill="#000000">r1D: 94, r2D: 94</text>
+  <text transform="rotate(27 233.426 309.886)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_108" y="312.31341" x="212.81337" fill="#000000">r1D: 93, r2D: 93</text>
+  <text transform="rotate(-61 100.689 300.951)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_109" y="303.37802" x="53.39186" fill="#000000">r1D: 91, r2D: 91, s1D: null, s2D: null</text>
+  <text transform="rotate(-25 257.246 149.489)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_110" y="151.81153" x="209.92454" fill="#000000">r1D: 91, r2D: 91, s1D: null, s2D: null</text>
+  <text transform="rotate(34 137.851 233.75)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_111" y="236.07322" x="102.89404" fill="#000000">r1D: 93, r2D: 93, s1D: 0.01</text>
+  <text transform="rotate(28 282.01 366.472)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_112" y="368.79454" x="220.33428" fill="#000000">(*vse točke ležečega policaja): r1D: 93, r2D: 93</text>
+  <text transform="rotate(60 178.997 144.485)" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_113" y="146.80802" x="157.64778" fill="#000000">r1D: 93, r2D: 93</text>
+  <text transform="rotate(64 207.204 215.831)" style="cursor: move;" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_114" y="218.15381" x="185.85426" fill="#000000">r1D: 92, r2D: 91</text>
+  <text transform="rotate(-26 229.641 249.957)" style="cursor: move;" stroke="#ff0000" xml:space="preserve" text-anchor="start" font-family="'Noto Sans Display'" font-size="6" stroke-width="0" id="svg_115" y="252.27965" x="208.29136" fill="#000000">r1D: 92, r2D: 91</text>
+ </g>
+</svg>
