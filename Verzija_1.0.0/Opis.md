@@ -21,7 +21,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		- Opis (Opis sloja)
 	- GeoPodatki (Geodetski načrt po specifikaciji formata [GeoJSON](https://geojson.org/)):
 		- Element (Točka/Linija/Poligon):
-			- TipID [number] (ID tipa elementa glede na [Topografski Ključ](http://fgg-web.fgg.uni-lj.si/~/mkuhar/Pouk/DetIzmera/Topografski_kljuc_maj_2006.pdf) ali eTopografskiKljuč)
+		- TipID [number] (ID tipa elementa glede na [Topografski Ključ](http://fgg-web.fgg.uni-lj.si/~/mkuhar/Pouk/DetIzmera/Topografski_kljuc_maj_2006.pdf) ali eTopografskiKljuč)
 		- SlojID [[enum number](#Seznam-slojev)] (ID sloja)
 - SeznamTock (Informacije o točkah po specifikaciji formata [GeoJSON](https://geojson.org/)):
 	- Točka:
