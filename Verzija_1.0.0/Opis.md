@@ -17,7 +17,8 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 	- KoordinatniSistem2D [number] (po standardu [EPSG](https://epsg.io/) - [Primer](https://www.e-prostor.gov.si/podrocja/drzavni-topografski-sistem/drugo/razno/epsg-kode-za-slovenijo/?acitem=1392-1393))
 - GeodetskiNacrt:
 	- UporabniskiSloji (Sloji, ki jih definira uporabnik):
-		- SlojID (ID Sloja, ki se glede na specifikacijo začne z 901, 902,..90n)
+		- ID (ID Sloja, ki se glede na specifikacijo začne z 901, 902,..90n)
+		- Barva [[hexcolor](https://en.wikipedia.org/wiki/Web_colors)] (Barva sloja v HEX zapisu)
 		- Opis (Opis sloja)
 	- GeoPodatki (Geodetski načrt po specifikaciji formata [GeoJSON](https://geojson.org/)):
 		- Element (Točka/Linija/Poligon):
@@ -109,8 +110,8 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		{
 			"UporabniskiSloji":
 			[
-				{ "SlojID": 91, "Opis": "Frontne Mere" },
-				{ "SlojID": 92, "Opis": "Detajlni posnetek mostu" }
+				{ "ID": 901, "Barva": "#FF00FF", "Opis": "Frontne Mere" },
+				{ "ID": 902, "Barva": "#FF0012", "Opis": "Detajlni posnetek mostu" }
 			],
 			"GeoPodatki":
 			{
@@ -152,7 +153,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 						},	
 						"properties": {
 							"TipID": 330210, -> Semafor
-							"SlojID": 91     -> Pločnik
+							"SlojID": 901    -> Pločnik
 						}
 					},... Drugi elementi
 				]
