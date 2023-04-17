@@ -26,6 +26,7 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		- SlojID [[enum number](#Seznam-slojev)] (ID sloja)
 - SeznamTock (Informacije o točkah po specifikaciji formata [GeoJSON](https://geojson.org/)):
 	- Točka:
+		- Oznaka [text/null] (oznaka točke)
 		- r1D [[enum number](#Seznam-podatkov)] (referenca na ID podatkovnega vira za višino)
 		- r2D [[enum number](#Seznam-podatkov)] (referenca na ID podatkovnega vira za 2D položaj)
 		- (Opcijsko) s1D [m] (sigma 1D)
@@ -65,6 +66,8 @@ eGeodetskiNačrt – Specifikacija standardizacije geodetskega načrta
 		2 - Ograja
 	6 - Upravni Režimi:
 		1 - Parcelne meje
+		2 - Namenska raba
+		3 - Dejanska raba
 	7 - Gospodarska javna infrastruktura:
 		0 - Neznano
 		1 - Vodovod
@@ -214,7 +217,9 @@ Dateko smo shranili kot "PrimerGeodetskegaNacrta.json" in jo zapakirali v "ZIP" 
 						]
 					},	
 					"properties": {
-						"ID": 1
+						"Oznaka": null,
+						"r1D": 2,
+						"r2D": 2
 					}
 				},
 				{
@@ -228,6 +233,7 @@ Dateko smo shranili kot "PrimerGeodetskegaNacrta.json" in jo zapakirali v "ZIP" 
 						]
 					},	
 					"properties": {
+						"Oznaka": "1",
 						"r1D": 2,
 						"r2D": 2
 					}
@@ -243,6 +249,7 @@ Dateko smo shranili kot "PrimerGeodetskegaNacrta.json" in jo zapakirali v "ZIP" 
 						]
 					},	
 					"properties": {
+						"Oznaka": "1001",
 						"r1D": 1,
 						"r2D": 2,
 						"s1D": 0.01,
